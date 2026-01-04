@@ -162,6 +162,28 @@ This project uses environment variables for API keys and backend services.
 > Human judgment is always final.
 
 ---
+## 📸 Application Screenshots
+
+### Dashboard Overview
+![Dashboard](screenshots/dashboard.png)
+
+### Market Outlook Summary
+![Market Outlook](screenshots/market outlook.png)
+
+### AI Market Analysis
+![Analysis](screenshots/analysis.png)
+
+### Technical Indicators
+![Indicators](screenshots/indicators.png)
+
+### Uncertainty-Aware Reasoning
+![Uncertainty](screenshots/uncertainty.png)
+
+## 🚧 Deployment Status
+
+This project is not publicly deployed due to limited market coverage and external data constraints.
+All core functionality, UI flows, and AI-driven analysis are demonstrated in the screenshots above.
+
 
 ## 👤 Author
 

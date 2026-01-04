@@ -1,73 +1,186 @@
-# Welcome to your Lovable project
+ Market Oracle
 
-## Project info
+**AI-Powered Market Interpretation & Trend Analysis Platform**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Market Oracle is a full-stack web application that performs **automated technical market analysis** on major financial indices using real market data and AI-driven interpretation.
+It is designed to convert raw indicators into **human-readable market insight**, not trading advice.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+* 📊 **Automated Market Analysis Pipeline**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+  * Fetches historical OHLCV market data
+  * Computes technical indicators (RSI, SMA, ATR)
+  * Generates structured market summaries
+  * Produces AI-based interpretation of signals
 
-Changes made via Lovable will be committed automatically to this repo.
+* 🧠 **AI Interpretation Layer**
 
-**Use your preferred IDE**
+  * Directional bias (Bullish / Bearish / Neutral)
+  * Market regime classification
+  * Volatility assessment
+  * Risk factors & confidence blockers
+  * Natural-language explanation for clarity
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* 🎯 **Supported Indices**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+  * S&P 500 (SPY)
+  * NASDAQ-100 (QQQ)
+  * Dow Jones Industrial Average (DJI)
 
-Follow these steps:
+* 🛡️ **Clean UX & Transparency**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+  * Validation status for missing/unknown signals
+  * Clear uncertainty assessment
+  * Explicit disclaimer (non-advisory)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧱 Architecture Overview
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```
+Frontend (React + Vite)
+        ↓
+Supabase Edge Functions
+        ↓
+Market Data Fetching
+        ↓
+Technical Indicator Computation
+        ↓
+Structured Market Summary
+        ↓
+AI Interpretation (LLM)
+```
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* Vite
+* React
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+
+**Backend**
+
+* Supabase Edge Functions (Deno)
+* Market data pipeline (OHLCV)
+* Indicator computation (RSI, SMA, ATR)
+
+**AI**
+
+* LLM-based interpretation via secure API
+* Prompt-driven structured responses
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├─ components/        # UI components
+ ├─ pages/             # App pages
+ ├─ lib/               # Analysis & utility logic
+ ├─ integrations/      # Supabase client
+ └─ main.tsx
+
+supabase/
+ ├─ functions/
+ │   ├─ fetch-market-data
+ │   ├─ compute-indicators
+ │   ├─ generate-market-summary
+ │   └─ analyze-market
+ └─ config.toml
+```
+
+---
+
+## ⚙️ Local Development
+
+### Prerequisites
+
+* Node.js (18+ recommended)
+* npm
+
+### Setup
+
+```bash
+git clone https://github.com/manassanjaymishra24/Market-Oracle.git
+cd Market-Oracle
+npm install
+```
+
+Create environment file:
+
+```bash
+cp .env.example .env
+```
+
+Fill in required environment variables.
+
+### Run locally
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌍 Deployment
 
-**Use GitHub Codespaces**
+Deployment is handled via **Lovable**.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Open the project on Lovable
+2. Click **Share → Publish**
+3. (Optional) Connect a custom domain via:
 
-## What technologies are used for this project?
+   ```
+   Project → Settings → Domains
+   ```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔐 Environment Variables
 
-## How can I deploy this project?
+This project uses environment variables for API keys and backend services.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+* `.env` → **never committed**
+* `.env.example` → template for setup
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## ⚠️ Disclaimer
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+> **This project is for informational and educational purposes only.**
+> It does **not** constitute financial or investment advice.
+> AI outputs represent interpretations, not predictions.
+> Human judgment is always final.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 👤 Author
+
+**Manas Sanjay Mishra**
+Engineering Student | Full-Stack Developer
+GitHub: [https://github.com/manassanjaymishra24](https://github.com/manassanjaymishra24)
+
+---
+
+## ⭐ Why This Project Matters
+
+Market Oracle demonstrates:
+
+* End-to-end system design
+* Data → logic → AI → UX pipeline
+* Real-world use of AI beyond chatbots
+* Clean separation of concerns
+* Production-ready Git workflow
+
+
+
+

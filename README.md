@@ -163,21 +163,21 @@ This project uses environment variables for API keys and backend services.
 
 ---
 ## 📸 Application Screenshots
+## Dashboard Overview
+![Dashboard](dashboard.png)
 
-### Dashboard Overview
-![Dashboard](screenshots/dashboard.png)
+## Market Outlook Summary
+![Market Outlook](market%20outlook.png)
 
-### Market Outlook Summary
-![Market Outlook](screenshots/market outlook.png)
+## AI Market Analysis
+![Analysis](analysis.png)
 
-### AI Market Analysis
-![Analysis](screenshots/analysis.png)
+## Technical Indicators
+![Indicators](indicators.png)
 
-### Technical Indicators
-![Indicators](screenshots/indicators.png)
+## Uncertainty-Aware Reasoning
+![Uncertainty](uncertainty.png)
 
-### Uncertainty-Aware Reasoning
-![Uncertainty](screenshots/uncertainty.png)
 
 ## 🚧 Deployment Status
 

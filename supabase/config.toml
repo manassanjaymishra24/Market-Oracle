@@ -1,0 +1,13 @@
+project_id = "yrxgtrskoauxwdssdcya"
+
+[functions.analyze-market]
+verify_jwt = false
+
+[functions.fetch-market-data]
+verify_jwt = false
+
+[functions.compute-indicators]
+verify_jwt = false
+
+[functions.generate-market-summary]
+verify_jwt = false
